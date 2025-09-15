@@ -177,6 +177,8 @@ void read_atm_trans( TString atmFileName, TH2Poly *h2poly, Int_t nn_km_bin, Doub
 	//cout<<"  "<<val<<endl;
 	//cout<<km_bin_center_arr[i_km]<<"  "<<val<<endl;
 	h2poly->Fill(lam_bin_center_arr[i_lam],km_bin_center_arr[i_km],val);
+	if(i_km == 6)
+	  cout<<km_bin_center_arr[i_km]<<" "<<lam_bin_center_arr[i_lam]<<" "<<val<<" "<<TMath::Power(10,-val)<<endl;
       }
     }
     

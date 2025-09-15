@@ -72,6 +72,12 @@ Int_t plots_atm(){
   gr_pw_p->SetMarkerStyle(20);
   gr_pw_p->Draw("APL");
   //
+  cout<<"gr_thick_g_cm2->Eval(4.83)  = "<<gr_thick_g_cm2->Eval(4.83)<<endl
+      <<"4.83 - 2.199                = "<<4.83 - 2.199<<endl;
+  cout<<"gr_thick_g_cm2->Eval(2.150) = "<<gr_thick_g_cm2->Eval(2.150)<<endl;
+  cout<<"gr_n_m->Eval(2.150) + 1     = "<<gr_n_m->Eval(2.150) + 1 <<endl;
+
+  //
   return 0;
 }
 
